@@ -1,0 +1,47 @@
+project:
+  type: website
+
+title: "Violeta"
+
+author: "Boris Ivan Huarachi Perez" 
+theme: [journals] 
+
+website:
+  title: "Cifo-Java"
+  navbar:
+    left:
+      - text: Backend
+        menu:
+          - text: Springboot
+            href: backend.qmd
+
+      - text: Fronted
+        menu:
+          - text: React
+            href: frontend.qmd
+      - text: Devops
+        menu: 
+          - text: Devops
+          - href: devops.qmd
+      - text: Sprints
+        menu: 
+          - text: SpringGoals
+          - href: sprint.qmd
+
+    right:
+      - text: Apuntes 
+        href: notas.qmd     
+nav:
+  - Backend: backend.qmd
+  - Frontend: frontend.qmd
+  - Clases: notas.qmd
+  - Devops: devops.qmd
+  - Sprints: sprint.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
