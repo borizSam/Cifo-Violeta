@@ -25,7 +25,7 @@ website:
           - href: devops.qmd
       - text: Sprints
         menu: 
-          - text: SpringGoals
+          - text: Sprint
           - href: sprint.qmd
 
     right:
