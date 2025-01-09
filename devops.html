@@ -128,10 +128,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Sprints</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-sprints">    
-        <li class="dropdown-header">SpringGoals</li>
+        <li class="dropdown-header">Sprint</li>
         <li>
-    <a class="dropdown-item" href="./sprint.qmd">
- <span class="dropdown-text"></span></a>
+    <a class="dropdown-item" href="./sprint.html">
+ <span class="dropdown-text">Spirnts</span></a>
   </li>  
     </ul>
   </li>
@@ -157,7 +157,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#texto" id="toc-texto" class="nav-link active" data-scroll-target="#texto">TEXTO</a></li>
+  <li><a href="#proyecto-automatización-devops" id="toc-proyecto-automatización-devops" class="nav-link active" data-scroll-target="#proyecto-automatización-devops">Proyecto Automatización DevOps</a>
+  <ul class="collapse">
+  <li><a href="#github-control-de-versiones-y-colaboración" id="toc-github-control-de-versiones-y-colaboración" class="nav-link" data-scroll-target="#github-control-de-versiones-y-colaboración">1. <strong>GitHub (Control de versiones y colaboración)</strong></a></li>
+  <li><a href="#jenkins-automatización-de-cicd" id="toc-jenkins-automatización-de-cicd" class="nav-link" data-scroll-target="#jenkins-automatización-de-cicd">2. <strong>Jenkins (Automatización de CI/CD)</strong></a></li>
+  <li><a href="#docker-contenerización" id="toc-docker-contenerización" class="nav-link" data-scroll-target="#docker-contenerización">3. <strong>Docker (Contenerización)</strong></a></li>
+  <li><a href="#aws-infraestructura-como-servicio" id="toc-aws-infraestructura-como-servicio" class="nav-link" data-scroll-target="#aws-infraestructura-como-servicio">4. <strong>AWS (Infraestructura como servicio)</strong></a></li>
+  <li><a href="#objetivo-del-flujo-de-trabajo-devops-propuesto" id="toc-objetivo-del-flujo-de-trabajo-devops-propuesto" class="nav-link" data-scroll-target="#objetivo-del-flujo-de-trabajo-devops-propuesto">Objetivo del flujo de trabajo DevOps propuesto:</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -189,10 +196,132 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="texto" class="level1">
-<h1>TEXTO</h1>
+<section id="proyecto-automatización-devops" class="level1">
+<h1>Proyecto Automatización DevOps</h1>
+<section id="github-control-de-versiones-y-colaboración" class="level2">
+<h2 class="anchored" data-anchor-id="github-control-de-versiones-y-colaboración">1. <strong>GitHub (Control de versiones y colaboración)</strong></h2>
+<ul>
+<li><strong>Propósito:</strong> GitHub es la plataforma de control de versiones más popular, ideal para proyectos colaborativos de desarrollo de software.</li>
+<li><strong>Uso en DevOps:</strong>
+<ul>
+<li><strong>Gestión de código fuente:</strong> Los desarrolladores de backend y frontend suben su código aquí.</li>
+<li><strong>Integración continua (CI):</strong> Puedes configurar un flujo de trabajo de integración continua (CI) usando Jenkins o GitHub Actions para que cuando se haga un “push” al repositorio, se ejecute un conjunto de pruebas o se construya automáticamente el proyecto.</li>
+<li><strong>Branching:</strong> El uso de ramas (branching) es clave para que cada equipo pueda trabajar de forma aislada en sus propias características sin interferir entre sí.</li>
+</ul></li>
+<li><strong>Por que elegir Github</strong>
+<ul>
+<li><strong>Mayor adopción:</strong> GitHub es una de las plataformas de repositorios Git más utilizadas, lo que garantiza un ecosistema robusto con muchas integraciones de herramientas.</li>
+<li><strong>Facilidad de colaboración:</strong> Su interfaz intuitiva, la facilidad para realizar “pull requests” y la gran comunidad hacen que GitHub sea una opción muy conveniente para equipos de desarrollo.</li>
+<li><strong>Integraciones CI/CD:</strong> GitHub tiene integraciones nativas con herramientas como GitHub Actions y otros servicios de CI/CD, lo que facilita el flujo de trabajo DevOps.</li>
+</ul></li>
+<li><strong>Comparación con otras plataformas:</strong>
+<ul>
+<li><strong>GitLab</strong> y <strong>Bitbucket</strong> GitLab también ofrece buenas características de CI/CD integradas, pero GitHub tiene una mayor adopción en la industria y una comunidad más activa. Bitbucket, aunque fuerte en equipos de Atlassian, tiene menos integraciones.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="jenkins-automatización-de-cicd" class="level2">
+<h2 class="anchored" data-anchor-id="jenkins-automatización-de-cicd">2. <strong>Jenkins (Automatización de CI/CD)</strong></h2>
+<ul>
+<li><strong>Propósito:</strong> Jenkins es una herramienta de automatización de código abierto que facilita la integración continua (CI) y la entrega continua (CD), permitiendo que el código se construya, se pruebe y se despliegue automáticamente.</li>
+<li><strong>Uso en DevOps:</strong>
+<ul>
+<li><strong>CI/CD Pipeline:</strong> Configura un <em>pipeline</em> en Jenkins para que cada vez que se suban cambios al repositorio de GitHub, se inicie un proceso automático para compilar, probar y desplegar la aplicación.</li>
+<li><strong>Pruebas automáticas:</strong> Se pueden ejecutar pruebas de unidad, pruebas de integración y pruebas end-to-end (E2E) dentro del pipeline.</li>
+<li><strong>Despliegue a AWS:</strong> Después de que el código pase las pruebas, puedes usar Jenkins para hacer el despliegue automático de la aplicación a AWS.</li>
+</ul></li>
+<li><strong>Por que elegir Jenkins</strong>
+<ul>
+<li><strong>Flexibilidad</strong> Jenkins es altamente personalizable y tiene soporte para una amplia variedad de plugins y integraciones con otras herramientas.</li>
+<li><strong>Popularidad:</strong> Es una de las herramientas de CI/CD más utilizadas, lo que asegura una gran comunidad de soporte.</li>
+<li><strong>Automatización:</strong> Permite la automatización de pruebas, compilación y despliegue, lo que es esencial para mantener la calidad del software en proyectos de DevOps.</li>
+</ul></li>
+<li><strong>Comparación con otras herramientas:</strong>
+<ul>
+<li><strong>GitLab CI/CD:</strong> GitLab tiene una integración nativa de CI/CD, eliminando la necesidad de configurar un servidor separado como Jenkins. Sin embargo, Jenkins sigue siendo más flexible y tiene una mayor cantidad de plugins.</li>
+<li><strong>CircleCI</strong> o <strong>Travis CI:</strong> Son alternativas más fáciles de usar, pero Jenkins ofrece más control sobre el proceso y más opciones de personalización.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="docker-contenerización" class="level2">
+<h2 class="anchored" data-anchor-id="docker-contenerización">3. <strong>Docker (Contenerización)</strong></h2>
+<ul>
+<li><strong>Propósito:</strong> Docker es una plataforma que permite crear, desplegar y ejecutar aplicaciones en contenedores. Un contenedor incluye todo lo necesario para ejecutar una aplicación (código, dependencias, configuraciones, etc.).</li>
+<li><strong>Uso en DevOps:</strong>
+<ul>
+<li><strong>Contenerización de aplicaciones:</strong> Tanto el backend como el frontend pueden ser “contenedorizados” para asegurarse de que se ejecuten de la misma manera en cualquier entorno.</li>
+<li><strong>Dockerfiles:</strong> Crear un <code>Dockerfile</code> para cada aplicación (backend y frontend) que defina cómo construir la imagen del contenedor.</li>
+<li><strong>Despliegue consistente:</strong> El uso de Docker asegura que el código se ejecutará de manera consistente en diferentes entornos (desarrollo, pruebas, producción).</li>
+<li><strong>Aislamiento de servicios:</strong> Puedes tener diferentes contenedores para servicios de backend y frontend, y asegurarte de que no haya interferencia entre ellos.</li>
+</ul></li>
+<li><strong>Por qué elegir Docker:</strong>
+<ul>
+<li><strong>Portabilidad:</strong> Docker asegura que tu aplicación funcione de manera consistente en todos los entornos (desarrollo, prueba, producción).</li>
+<li><strong>Aislamiento:</strong> Permite que el backend y frontend de una aplicación se ejecuten de forma aislada, sin interferencias entre ellos.</li>
+<li><strong>Escalabilidad:</strong> Docker facilita la gestión de aplicaciones a gran escala, al ser ligero y eficiente.</li>
+</ul></li>
+<li><strong>Comparación con otras tecnologías:</strong>
+<ul>
+<li><strong>Kubernetes</strong>: Aunque Kubernetes también puede gestionar contenedores a escala, Docker es más simple y directo cuando se trata de contenerización.</li>
+<li><strong>VMs</strong>: Las máquinas virtuales pueden ofrecer aislamiento similar, pero son más pesadas y menos eficientes que los contenedores, lo que hace que Docker sea una opción preferible en términos de rendimiento y flexibilidad.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="aws-infraestructura-como-servicio" class="level2">
+<h2 class="anchored" data-anchor-id="aws-infraestructura-como-servicio">4. <strong>AWS (Infraestructura como servicio)</strong></h2>
+<ul>
+<li><strong>Propósito:</strong> AWS (Amazon Web Services) es un conjunto de servicios en la nube que te permite gestionar recursos como servidores, bases de datos, redes y almacenamiento de manera flexible y escalable.</li>
+<li><strong>Uso en DevOps:</strong>
+<ul>
+<li><strong>Elastic Container Service (ECS):</strong> Puedes usar ECS para gestionar contenedores Docker en AWS. ECS te permite ejecutar, detener y gestionar clústeres de contenedores.</li>
+<li><strong>Elastic Container Registry (ECR):</strong> Es un repositorio privado de contenedores Docker. Puedes almacenar las imágenes Docker que generes (por ejemplo, en Jenkins) y luego utilizar ECS para desplegar esas imágenes en producción.</li>
+<li><strong>Infraestructura escalable:</strong> AWS permite que la infraestructura escale según la demanda, por lo que tus aplicaciones podrán manejar un aumento de tráfico sin intervención manual.</li>
+</ul></li>
+<li><strong>Por qué elegir AWS:</strong>
+<ul>
+<li><strong>Escalabilidad y flexibilidad:</strong> AWS permite que tu infraestructura escale según la demanda, sin intervención manual. Además, ofrece un amplio abanico de servicios para gestionar contenedores, bases de datos y redes.</li>
+<li><strong>Integración con herramientas DevOps:</strong> AWS tiene integraciones nativas con Jenkins, Docker y otras herramientas populares de DevOps, facilitando la automatización de procesos.</li>
+<li><strong>Servicios específicos para DevOps:</strong> AWS tiene servicios dedicados a DevOps, como Elastic Beanstalk, ECS, ECR y CloudWatch, que mejoran la gestión y monitoreo de aplicaciones.</li>
+</ul></li>
+<li><strong>Comparación con otras plataformas en la nube:</strong>
+<ul>
+<li><strong>Google Cloud Platform (GCP)</strong> y <strong>Microsoft Azure:</strong> Ambos ofrecen servicios similares para gestionar Kubernetes, contenedores y escalabilidad. Sin embargo, AWS es la opción más popular en la industria, con una mayor cantidad de servicios y mejor soporte para DevOps.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="objetivo-del-flujo-de-trabajo-devops-propuesto" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-del-flujo-de-trabajo-devops-propuesto">Objetivo del flujo de trabajo DevOps propuesto:</h2>
+<ol type="1">
+<li><strong>Desarrollo:</strong>
+<ul>
+<li>Los desarrolladores trabajan en sus ramas individuales en GitHub y luego envían sus cambios a la rama principal.</li>
+</ul></li>
+<li><strong>CI/CD con Jenkins:</strong>
+<ul>
+<li><strong>Jenkins</strong> se integra con <strong>GitHub</strong> y, al recibir un cambio en la rama principal, inicia el pipeline de <strong>integración continua</strong>.</li>
+<li>En el pipeline se compila, prueba y crea la imagen del contenedor Docker.</li>
+<li>Si todas las pruebas pasan, Jenkins empuja la imagen Docker a <strong>ECR</strong> (repositorio de contenedores en AWS).</li>
+</ul></li>
+<li><strong>Despliegue en AWS:</strong>
+<ul>
+<li>Las imágenes Docker generadas por Jenkins se almacenan en ECR, y ECS se encarga de ejecutar esas imágenes en producción.</li>
+</ul></li>
+<li><strong>Monitoreo y Escalado:</strong>
+<ul>
+<li>AWS CloudWatch y Auto Scaling permiten monitorear el rendimiento y escalar automáticamente la infraestructura según el tráfico.</li>
+</ul></li>
+</ol>
+<hr>
+<ul>
+<li><strong>Conclusión:</strong> GitHub para control de versiones, Jenkins para CI/CD, Docker para contenerización y AWS para la infraestructura solución poderosa y flexible para proyectos de DevOps.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -286,7 +415,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/borizSam\.github\.io\/Cifo-Violeta\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
