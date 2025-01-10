@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "backend.html",
-    "href": "backend.html",
-    "title": "BACKEND",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "About this site"
   },
   {
     "objectID": "devops.html",
@@ -49,10 +49,10 @@
     "text": "Desarrollo:\n\nLos desarrolladores trabajan en sus ramas individuales en GitHub y luego envían sus cambios a la rama principal.\n\nCI/CD con Jenkins:\n\nJenkins se integra con GitHub y, al recibir un cambio en la rama principal, inicia el pipeline de integración continua.\nEn el pipeline se compila, prueba y crea la imagen del contenedor Docker.\nSi todas las pruebas pasan, Jenkins empuja la imagen Docker a ECR (repositorio de contenedores en AWS).\n\nDespliegue en AWS:\n\nLas imágenes Docker generadas por Jenkins se almacenan en ECR, y ECS se encarga de ejecutar esas imágenes en producción.\n\nMonitoreo y Escalado:\n\nAWS CloudWatch y Auto Scaling permiten monitorear el rendimiento y escalar automáticamente la infraestructura según el tráfico.\n\n\n\n\nConclusión: GitHub para control de versiones, Jenkins para CI/CD, Docker para contenerización y AWS para la infraestructura solución poderosa y flexible para proyectos de DevOps."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "backend.html",
+    "href": "backend.html",
+    "title": "BACKEND",
     "section": "",
-    "text": "About this site"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
 ]
