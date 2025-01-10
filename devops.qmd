@@ -94,6 +94,7 @@ title: "Devops"
 
 4. **Monitoreo y Escalado:**
    - AWS CloudWatch y Auto Scaling permiten monitorear el rendimiento y escalar automáticamente la infraestructura según el tráfico.
+
 ---
 
 - **Conclusión:** 
