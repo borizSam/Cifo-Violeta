@@ -1,3 +1,16 @@
 ---
 title: "Spirnts"
 ---
+
+# My 10-Week Plan
+
+## Introduction
+
+This is my **10-week plan** for the upcoming *SCRUM sprints*.
+
+### Key Points:
+1. Plan effectively
+2. Stay focused
+3. Review regularly
+
+> "Plans are nothing; planning is everything." - Dwight D. Eisenhower

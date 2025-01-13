@@ -1,3 +1,36 @@
 ---
 title: "NOTAS"
 ---
+# Apuntes de clases
+
+# Viernes 10/01/2025
+
+## Git
+
+    *Fork vs Clone
+
+    Fork --> Contribuir
+    Clone --> Tenerlo en local sandbox
+
+-
+
+## Sprint + React
+
+    1-. DB H2
+    2-. Spring
+    3-. Api rest
+    4-. React
+-
+ ## Spingboot
+
+    1-. Autoconfiguración --> Configuraciones que se hacen automaticamente. tomcat apache..
+    2-. Anotaciónes       --> Configuraciones que realizamos nosotros variables, metodos y clases.
+    3-. Inyección de dependencias --> 
+-
+# React
+
+# SCRUM - SEMANA 2 
+
+# SCRUM - SEMANA 3 -- REVISAR LA SEMANA 3
+
+# LUNES 13/01/2025
